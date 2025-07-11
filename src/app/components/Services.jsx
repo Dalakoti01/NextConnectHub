@@ -1,0 +1,252 @@
+import {
+  Code,
+  Wifi,
+  Globe,
+  Palette,
+  CreditCard,
+  MessageCircle,
+  Clock,
+  Database,
+  Settings,
+} from "lucide-react";
+
+const services = [
+  {
+    icon: <Code className="w-8 h-8 text-blue-600" />,
+    title: "MERN Stack Development And Next Js",
+    description: `We build fast, modern, and scalable web apps using MongoDB, Express, React, 
+,Node.js and NextJs. Each solution is tailored to your business needs — no copy-paste`,
+  },
+  {
+    icon: <Wifi className="w-8 h-8 text-blue-600" />,
+    title: "WebSocket Support",
+    description: `Whether you want to build a chat app, want live updates or real-time 
+collaboration tools — we make everything possible with WebSocket. Fast, sync, 
+and live – the way it should be.`,
+  },
+  {
+    icon: <Globe className="w-8 h-8 text-blue-600" />,
+    title: "WordPress Development",
+    description: `If you want WordPress, we create a unique WordPress site with custom design 
+and functionality. Performance and style — both no-compromise`,
+  },
+  {
+    icon: <Palette className="w-8 h-8 text-blue-600" />,
+    title: "UI/UX Design",
+    description: `Your website should not only look good, but also be fun to use. We create 
+designs that give users a feel-good experience — clean look with smart 
+usability.`,
+  },
+  {
+    icon: <CreditCard className="w-8 h-8 text-blue-600" />,
+    title: "Payment Gateway Integration",
+    description:
+      "Seamlessly integrate payment processing into your website with Razorpay or Stripe. Our secure implementation ensures smooth transactions for your customers.",
+  },
+  {
+    icon: <MessageCircle className="w-8 h-8 text-blue-600" />,
+    title: "AI Chatbot Integration",
+    description: `Want a smart chatbot on your website? Absolutely possible. We integrate AI based chatbots that provide support, drive leads, and take the customer 
+experience to the next level — all in keeping with your brand tone.`,
+  },
+  {
+    icon: <Clock className="w-8 h-8 text-blue-600" />,
+    title: "Free Maintenance",
+    description: `We are with you even after the website is launched. Every package includes 3 
+months of free updates, bug fixes, and small changes — so you can focus on 
+growth without any tension.`,
+  },
+  {
+    icon: <Database className="w-8 h-8 text-blue-600" />,
+    title: "SEO that really works",
+    description:
+      `We make your website completely SEO-friendly in one go — so even Google loves your site 
+Higher rankings = more traffic = more clients.`,
+  },
+  {
+    icon: <Settings className="w-8 h-8 text-blue-600" />,
+    title: "Custom Solutions",
+    description:
+      "Have unique requirements? We offer custom web development solutions tailored to your specific needs. Contact us to discuss your project and get a personalized quote.",
+  },
+];
+
+const pricingPlans = [
+  {
+    name: "Basic",
+    pages: "Up to 10 pages",
+    price: "₹12,000",
+    features: [
+      "MERN Stack Development",
+      "Responsive Design",
+      "3 Months Free Maintenance",
+      "Database Support (512MB)",
+    ],
+  },
+  {
+    name: "Standard",
+    pages: "Up to 30 pages",
+    price: "₹36,000",
+    features: [
+      "All Basic features",
+      "UI/UX Design",
+      "Payment Gateway Integration",
+      "AI Chatbot Integration",
+    ],
+  },
+  {
+    name: "Premium",
+    pages: "Up to 50 pages",
+    price: "₹60,000",
+    features: [
+      "All Standard features",
+      "WebSocket Support",
+      "Advanced Customization",
+      "Priority Support",
+    ],
+  },
+  {
+    name: "Custom",
+    pages: "As needed",
+    price: "Custom Quote",
+    features: [
+      "Tailored to your specific requirements. Contact us for a personalized quote.",
+    ],
+  },
+];
+
+// Server Component (no client-side hooks or navigation)
+const Services = () => {
+  return (
+    <div className="w-full h-full">
+      <div className="w-full min-h-screen bg-gray-50">
+        {/* Hero Section */}
+        <div className="bg-gradient-to-r from-[#146fb9] to-blue-950 text-white py-16 px-4">
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Our Services
+            </h1>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto">
+              To help your business run successfully online, we offer full web
+              development support - from planning to launch, all in one place{" "}
+            </p>
+          </div>
+        </div>
+
+        {/* Services Grid */}
+        <div className="max-w-7xl mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Pricing Section */}
+        <div className="bg-white py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Our Pricing Structure
+              </h2>
+              <p className="text-lg text-gray-600">
+                We offer transparent pricing based on your project size and
+                requirements.
+              </p>
+            </div>
+
+            {/* Pricing Table */}
+            <div className="overflow-x-auto">
+              <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <thead className="bg-[#146fb9] text-white">
+                  <tr>
+                    <th className="px-6 py-4 text-left font-semibold">
+                      Package
+                    </th>
+                    <th className="px-6 py-4 text-left font-semibold">Pages</th>
+                    <th className="px-6 py-4 text-left font-semibold">
+                      Price (₹)
+                    </th>
+                    <th className="px-6 py-4 text-left font-semibold">
+                      Features
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pricingPlans.map((plan, index) => (
+                    <tr
+                      key={index}
+                      className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}
+                    >
+                      <td className="px-6 py-4 font-semibold text-gray-800">
+                        {plan.name}
+                      </td>
+                      <td className="px-6 py-4 text-gray-600">{plan.pages}</td>
+                      <td className="px-6 py-4 font-semibold text-blue-600">
+                        {plan.price}
+                      </td>
+                      <td className="px-6 py-4">
+                        <ul className="space-y-1">
+                          {plan.features.map((feature, featureIndex) => (
+                            <li
+                              key={featureIndex}
+                              className="text-gray-600 text-sm"
+                            >
+                              • {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-8 text-center text-gray-600">
+              <p className="mb-2">
+                Note: Domain and hosting charges are not included in any
+                package.
+              </p>
+              <p>
+                Prices may vary slightly based on specific project requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="bg-gradient-to-r from-[#146fb9] to-blue-950 text-white py-16 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Ready to Start Your Project?
+            </h2>
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+              Contact us today to discuss your requirements and get a
+              personalized quote.
+            </p>
+            <a
+              href="/getInTouch"
+              className="bg-white cursor-pointer text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 inline-block"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Services;

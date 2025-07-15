@@ -47,7 +47,7 @@ for every type of company – small or large          </p>
                 {link.label}
               </Link>
             ))}
-          </div>e
+          </div>
         </div>
 
         {/* Contact Info */}

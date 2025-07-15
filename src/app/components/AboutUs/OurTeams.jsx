@@ -52,8 +52,8 @@ const OurTeams = () => {
   const philosophyItems = [
     {
       icon: CheckCircle,
-      title: "UOD-3",
-      description: "UOD-3 is a modern framework that follows a structured set of steps to deliver a modern, tech-enabled web application—from understanding client requirements to final deployment."
+      title: "UODDM",
+      description: "UODDM is a modern framework that follows a structured set of steps to deliver a modern, tech-enabled web application—from understanding client requirements to final deployment."
     },
     {
       icon: Clock,

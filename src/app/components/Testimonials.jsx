@@ -3,23 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 const portfolioItems = [
-  {
+   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Restaurant Website",
     description:
-      "A full-featured online store with payment integration and inventory management.",
-    image: "/EcommercePortfolio.jpg",
-    category: "E-Commerce",
-    link: "https://ecom-virid-eight.vercel.app/",
+      "Restaurant website with online reservation system and menu management.",
+    image: "/RestrauntImage.jpg",
+    category: "Restaurant",
+    link: "https://elegant-restaurant-website-with-fixed.onrender.com/",
   },
   {
     id: 2,
-    title: "Corporate Website",
+    title: "Fitness Application",
     description:
-      "Modern corporate website with custom CMS and blog functionality.",
-    image: "/CorporateWebsite.jpg",
-    category: "Corporate",
-    link: "https://agra-tax-navigator.vercel.app/",
+      "Workout tracking app with personalized fitness plans and progress monitoring.",
+    image: "/FitnessPortfolio.jpg",
+    category: "Fitness",
+    link: "https://fitnessapp-1fbr.onrender.com/",
   },
   {
     id: 3,
@@ -39,14 +39,14 @@ const portfolioItems = [
     category: "Education",
     link: "https://edu-bharat.vercel.app/",
   },
-  {
+ {
     id: 5,
-    title: "Restaurant Website",
+    title: "E-Commerce Platform",
     description:
-      "Restaurant website with online reservation system and menu management.",
-    image: "/RestrauntImage.jpg",
-    category: "Restaurant",
-    link: "https://elegant-restaurant-website-with-fixed.onrender.com/",
+      "A full-featured online store with payment integration and inventory management.",
+    image: "/EcommercePortfolio.jpg",
+    category: "E-Commerce",
+    link: "https://ecom-virid-eight.vercel.app/",
   },
   {
     id: 6,
@@ -68,12 +68,12 @@ const portfolioItems = [
   },
   {
     id: 8,
-    title: "Fitness Application",
+    title: "Corporate Website",
     description:
-      "Workout tracking app with personalized fitness plans and progress monitoring.",
-    image: "/FitnessPortfolio.jpg",
-    category: "Fitness",
-    link: "https://fitnessapp-1fbr.onrender.com/",
+      "Modern corporate website with custom CMS and blog functionality.",
+    image: "/CorporateWebsite.jpg",
+    category: "Corporate",
+    link: "https://agra-tax-navigator.vercel.app/",
   },
   {
     id: 9,

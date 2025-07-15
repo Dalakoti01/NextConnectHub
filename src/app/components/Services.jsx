@@ -75,7 +75,7 @@ const pricingPlans = [
   {
     name: "Basic",
     pages: "Up to 10 pages",
-    price: "₹12,000",
+    price: "₹15,000",
     features: [
       "MERN Stack Development",
       "Responsive Design",
@@ -86,7 +86,7 @@ const pricingPlans = [
   {
     name: "Standard",
     pages: "Up to 30 pages",
-    price: "₹36,000",
+    price: "₹45,000",
     features: [
       "All Basic features",
       "UI/UX Design",
@@ -94,17 +94,7 @@ const pricingPlans = [
       "AI Chatbot Integration",
     ],
   },
-  {
-    name: "Premium",
-    pages: "Up to 50 pages",
-    price: "₹60,000",
-    features: [
-      "All Standard features",
-      "WebSocket Support",
-      "Advanced Customization",
-      "Priority Support",
-    ],
-  },
+  
   {
     name: "Custom",
     pages: "As needed",

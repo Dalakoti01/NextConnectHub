@@ -118,28 +118,35 @@ const OurTeams = () => {
             Meet Our Team
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl flex justify-center transition-shadow duration-300">
-                <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                    <Image
-                     src={member.image}
-                  alt={`${member.name} a core member of our technical team.`}
-                  width={80}
-                  height={80}
-                  className="rounded-full object-cover w-full h-full shadow-inner"
-                    />
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-3">{member.role}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {teamMembers.map((member, index) => (
+    <div
+      key={index}
+      className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl flex flex-col md:flex-row transition-shadow duration-300"
+    >
+      {/* Image & background wrapper */}
+      <div className="w-full md:w-1/3 flex justify-center items-center bg-gradient-to-br from-blue-100 to-purple-100 p-4">
+        <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+          <Image
+            src={member.image}
+            alt={`${member.name} a core member of our technical team.`}
+            width={80}
+            height={80}
+            className="rounded-full object-cover w-full h-full shadow-inner"
+          />
+        </div>
+      </div>
+
+      {/* Text section */}
+      <div className="w-full md:w-2/3 p-6">
+        <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
+        <p className="text-blue-600 font-medium mb-3">{member.role}</p>
+        <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
 

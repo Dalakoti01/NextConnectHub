@@ -14,7 +14,7 @@ const HeroHome = () => {
               Nextconnecthub brings to you realistic, competitive, and
               cutting-edge web solution-based services to your business
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex  md:flex-row gap-4">
               <Link href="/services" passHref>
                 <button className="bg-white cursor-pointer text-[#146fb9] font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-200">
                   Our Services

@@ -36,14 +36,17 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className='w-full'>
       <HeroGet/>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 px-20'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 sm:px-6 md:px-12 lg:px-20'>
         <div className='py-20'>
 <LeftMain/>
 
+        </div >
+        <div className='w-full'>
+<ContactForm className= {`bg-white  rounded-lg`}/>
+
         </div>
-<ContactForm className={`bg-white rounded-lg`}/>
       </div>
     </div>
   )
